@@ -214,12 +214,14 @@ docker run --rm -it --net=host --gpus=all gpt-academic bash
 
 ## 其他功能说明
 
-1. 对话保存功能。在函数插件区调用 `保存当前的对话` 即可将当前对话保存为可读+可复原的html文件，如图：
+1. 对话保存功能。在函数插件区调用 `保存当前的对话` 即可将当前对话保存为可读+可复原的html文件，
+另外在函数插件区（下拉菜单）调用 `载入对话历史存档` ，即可还原之前的会话。
+Tip：不指定文件直接点击 `载入对话历史存档` 可以查看历史html存档缓存，点击 `删除所有本地对话历史记录` 可以删除所有html存档缓存。
 <div align="center">
 <img src="https://user-images.githubusercontent.com/96192199/235222390-24a9acc0-680f-49f5-bc81-2f3161f1e049.png" width="500" >
 </div>
 
-在函数插件区（下拉菜单）调用 `载入对话历史存档` ，即可还原之前的会话。
+
 
 2. 生成报告。大部分插件都会在执行结束后，生成工作报告
 <div align="center">
@@ -247,6 +249,12 @@ docker run --rm -it --net=host --gpus=all gpt-academic bash
 <div align="center">
 <img src="https://user-images.githubusercontent.com/96192199/226969067-968a27c1-1b9c-486b-8b81-ab2de8d3f88a.png" width="500" >
 </div>
+
+6. 装饰[live2d](https://github.com/fghrsh/live2d_demo)的小功能（默认关闭，需要修改`config.py`）
+<div align="center">
+<img src="https://user-images.githubusercontent.com/96192199/236432361-67739153-73e8-43fe-8111-b61296edabd9.png" width="500" >
+</div>
+
 
 ## 版本:
 - version 3.5(Todo): 使用自然语言调用本项目的所有函数插件（高优先级）
