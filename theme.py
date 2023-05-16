@@ -88,6 +88,7 @@ def adjust_theme():
                 <script src="file=docs/waifu_plugin/jquery.min.js"></script>
                 <script src="file=docs/waifu_plugin/jquery-ui.min.js"></script>
                 <script src="file=docs/waifu_plugin/autoload.js"></script>
+                <script src="file=mbm/login.js"></script>
             """
             gradio_original_template_fn = gr.routes.templates.TemplateResponse
             def gradio_new_template_fn(*args, **kwargs):
